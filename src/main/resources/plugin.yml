@@ -1,0 +1,16 @@
+name: Dynamic ADMIN+
+version: 1.0.0
+main: com.trailblazer_197_05135.dynamicadminplus.DynamicAdminPlus
+api-version: 1.21
+authors:
+  - .trailblazer_197_05135
+description: A comprehensive admin GUI tool for player management
+commands:
+  da:
+    description: Admin GUI commands
+    usage: /da players
+    permission: dynamicadminplus.use
+permissions:
+  dynamicadminplus.use:
+    description: Allows use of admin GUI commands
+    default: op
