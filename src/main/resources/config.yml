@@ -1,0 +1,124 @@
+# Dynamic ADMIN+ Configuration File
+# This file contains all configurable options for the DoubleAdmin plugin.
+# For support or questions, visit [your website/forum].
+
+# ================================
+# GENERAL SETTINGS
+# ================================
+
+# Refresh interval for player stats cache in minutes.
+# Lower values provide more up-to-date information but may increase server load.
+# Default: 1
+refresh-interval-minutes: 1
+
+# Whether to enable debug logging for troubleshooting.
+# Default: false
+debug-mode: false
+
+# ================================
+# GUI SETTINGS
+# ================================
+
+# Custom titles for GUI interfaces.
+gui-titles:
+  players: "&8Online Players"
+  player-actions: "&8Player Actions - %player%"
+  confirmation: "&8Confirm Action"
+  modify-health: "&8Modify Max Health - %player%"
+
+# Materials used for GUI elements (Minecraft item names).
+gui-materials:
+  player-head: PLAYER_HEAD
+  ban-pane: RED_STAINED_GLASS_PANE
+  kick-pane: ORANGE_STAINED_GLASS_PANE
+  tp-admin-to-player: YELLOW_STAINED_GLASS_PANE
+  tp-player-to-admin: BLUE_STAINED_GLASS_PANE
+  kill-pane: BLACK_STAINED_GLASS_PANE
+  remove-potions-pane: PURPLE_STAINED_GLASS_PANE
+  modify-health-pane: GREEN_STAINED_GLASS_PANE
+  freeze-pane: GRAY_STAINED_GLASS_PANE
+  unfreeze-pane: LIGHT_GRAY_STAINED_GLASS_PANE
+  confirm-pane: LIME_STAINED_GLASS_PANE
+  cancel-pane: RED_STAINED_GLASS_PANE
+
+# ================================
+# PERMISSIONS
+# ================================
+
+# Specific permissions required for each admin action.
+# Set to empty string ("") to disable permission check for that action.
+permissions:
+  ban: "dynamicadminplus.ban"
+  kick: "dynamicadminplus.kick"
+  teleport-to-player: "dynamicadminplus.teleport.to"
+  teleport-player-here: "dynamicadminplus.teleport.here"
+  kill: "dynamicadminplus.kill"
+  remove-potion-effects: "dynamicadminplus.remove.potions"
+  modify-max-health: "dynamicadminplus.modify.health"
+  freeze: "dynamicadminplus.freeze"
+  unfreeze: "dynamicadminplus.unfreeze"
+
+# ================================
+# MESSAGES
+# ================================
+
+# Customizable messages used throughout the plugin.
+# Supports color codes (&) and placeholders like %player%.
+messages:
+  no-permission: "&cYou don't have permission to use this command."
+  command-usage: "&eUsage: /da players"
+  player-not-found: "&cPlayer %player% not found or offline."
+  action-executed: "&aAction executed successfully on %player%."
+  action-cancelled: "&cAction cancelled."
+  health-modified: "&aMax health for %player% set to %health%."
+  health-increased: "&aIncreased max health of %player% to %health%."
+  health-decreased: "&cDecreased max health of %player% to %health%."
+  frozen-message: "&cYou have been frozen by an admin!"
+  unfrozen-message: "&aYou have been unfrozen by an admin!"
+  cannot-modify-self: "&cYou cannot perform this action on yourself."
+  player-immune: "&cPlayer %player% is immune to this action."
+  cooldown-active: "&cPlease wait before using this action again."
+
+# ================================
+# FEATURE TOGGLES
+# ================================
+
+# Enable or disable specific admin actions.
+features:
+  enable-ban: true
+  enable-kick: true
+  enable-teleport-to-player: true
+  enable-teleport-player-here: true
+  enable-kill: true
+  enable-remove-potion-effects: true
+  enable-modify-max-health: true
+  enable-freeze: true
+  enable-unfreeze: true
+
+# ================================
+# CACHE SETTINGS
+# ================================
+
+# Advanced cache configuration for performance optimization.
+cache:
+  # Maximum number of player entries to cache.
+  # Default: 1000
+  max-entries: 1000
+  # Cache expiry time in hours after last access.
+  # Default: 24
+  expiry-hours: 24
+  # Whether to preload online players on startup.
+  # Default: true
+  preload-online: true
+
+# ================================
+# SOUND EFFECTS
+# ================================
+
+# Sound effects played when interacting with GUIs.
+sounds:
+  gui-open: "BLOCK_CHEST_OPEN"
+  gui-close: "BLOCK_CHEST_CLOSE"
+  action-confirm: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  action-cancel: "BLOCK_ANVIL_BREAK"
+  error: "BLOCK_NOTE_BLOCK_BASS"
