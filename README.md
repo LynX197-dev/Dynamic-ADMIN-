@@ -1,5 +1,4 @@
 # Dynamic ADMIN+
-[![Download on Modrinth](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_64h.png)](https://modrinth.com/plugin/dynamic-admin+)
 
 A powerful and modern **Admin GUI plugin** for Minecraft servers.  
 Dynamic ADMIN+ converts player management into a fast, visual, and intuitive experience using elegant **double-chest interfaces**.
